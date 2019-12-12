@@ -1,0 +1,32 @@
+JAVA
+=====================================================================
+javac Test.java               (compile the java file and create a .class file)
+jar cf Test.jar Test.class    (using .class file crate JAR)            //creates a jar file
+
+Execute Jar = java -jar Test.jar
+
+NOTE: (System Variable)
+JAVA_HOME = C:\Program Files\Java\jre1.8.0_221
+path = %JAVA_HOME%\bin
+
+===========================================================================
+create JAR containing JS file
+---------------------------------------------------------------------------
+jar cf Test.jar Test.js
+
+jar cf combine.jar Test.js Utill.js   (jar with multiple JS files)
+
+===========================================================================
+JAR Commands
+---------------------------------------------------------------------------
+
+To create a JAR file:	    jar cf jar-file input-file(s)
+To view the contents of a JAR file:	    jar tf jar-file
+To extract the contents of a JAR file:  	jar xf jar-file
+To extract specific files from a JAR file:  	jar xf jar-file archived-file(s)
+To run an application packaged as a JAR file (requires the Main-class manifest header):   	java -jar app.jar
+To invoke an applet packaged as a JAR file	
+<applet code=AppletClassName.class
+        archive="JarFileName.jar"
+        width=width height=height>
+</applet>
