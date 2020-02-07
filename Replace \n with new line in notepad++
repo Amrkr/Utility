@@ -1,0 +1,10 @@
+https://www.giannistsakiris.com/2011/07/05/replace-n-with-new-line-characters-using-notepad/
+
+
+ctrl + F
+click on REPLACE TAB
+find what: \\n
+replace with: \n
+
+select: extended (in search mode)
+enter
