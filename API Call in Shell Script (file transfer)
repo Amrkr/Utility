@@ -37,6 +37,6 @@ Content of file
  
 SUCCESS HTTPS POST CALL
 ================================
- curl -X POST -i -H "Accept: application/json" -H "Content-Type: application/json" -H "Authorization: NLAuth nlauth_account=TSTDRV2067293, nlauth_email=amar.kumar@smarterp.com, nlauth_signature=Netsuite@111" -d "{\"csv\" : \"$csv\"}" "https://tstdrv2067293.restlets.api.netsuite.com/app/site/hosting/restlet.nl?script=2531&deploy=1"
+ curl -X POST -i -H "Accept: application/json" -H "Content-Type: application/json" -H "Authorization: NLAuth nlauth_account=TSTDRV2067293, nlauth_email=EMAIL, nlauth_signature=PWD" -d "{\"csv\" : \"$csv\"}" "https://tstdrv2067293.restlets.api.netsuite.com/app/site/hosting/restlet.nl?script=2531&deploy=1"
  
  
