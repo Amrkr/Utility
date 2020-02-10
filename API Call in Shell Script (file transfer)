@@ -1,0 +1,42 @@
+SHELL SCRIPT
+
+
+
+BASE64 ENCODE:
+==================
+
+(base64 -w 0 C:\\Users\\amark\\Pictures\\19704540.JPG)
+
+OR
+base64 C:\\Users\\amark\\Pictures\\19704540.JPG
+
+OR
+
+ echo "data:image/jpeg;base64,$(base64 -w 0 C:\\Users\\amark\\Pictures\\19704540.JPG)"
+ 
+ 
+HTTP CALL (GET)
+===============================
+ curl -X GET -i -H "Accept: application/json" -H "Content-Type: application/json" -H "Authorization: NLAuth nlauth_account=TSTDRV2067293, nlauth_email=amar.kumar@smarterp.com, nlauth_signature=Netsuite@111" "https://tstdrv2067293.restlets.api.netsuite.com/app/site/hosting/restlet.nl?script=2531&deploy=1&csv=TmFtZSxBZ2UNCkFtYXIsMjUNCg=="
+ 
+
+
+VARIABLE (In CYGWIN)
+===========================
+export csv=$(base64 -w 0 C:\\Users\\amark\\Pictures\\RESTLET_TEST_SS.xlsx)
+
+echo $csv
+
+
+Content of file
+============================
+ export content=$(<C:\\Users\\amark\\Pictures\\RESTLET_TEST_SS.xlsx)
+ 
+ OR
+ 
+ 
+SUCCESS HTTPS POST CALL
+================================
+ curl -X POST -i -H "Accept: application/json" -H "Content-Type: application/json" -H "Authorization: NLAuth nlauth_account=TSTDRV2067293, nlauth_email=amar.kumar@smarterp.com, nlauth_signature=Netsuite@111" -d "{\"csv\" : \"$csv\"}" "https://tstdrv2067293.restlets.api.netsuite.com/app/site/hosting/restlet.nl?script=2531&deploy=1"
+ 
+ 
