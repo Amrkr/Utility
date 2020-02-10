@@ -17,7 +17,7 @@ OR
  
 HTTP CALL (GET)
 ===============================
- curl -X GET -i -H "Accept: application/json" -H "Content-Type: application/json" -H "Authorization: NLAuth nlauth_account=TSTDRV2067293, nlauth_email=amar.kumar@smarterp.com, nlauth_signature=Netsuite@111" "https://tstdrv2067293.restlets.api.netsuite.com/app/site/hosting/restlet.nl?script=2531&deploy=1&csv=TmFtZSxBZ2UNCkFtYXIsMjUNCg=="
+ curl -X GET -i -H "Accept: application/json" -H "Content-Type: application/json" -H "Authorization: NLAuth nlauth_account=TSTDRV2067293, nlauth_email=EMAIL, nlauth_signature=PWD" "https://tstdrv2067293.restlets.api.netsuite.com/app/site/hosting/restlet.nl?script=2531&deploy=1&csv=TmFtZSxBZ2UNCkFtYXIsMjUNCg=="
  
 
 
