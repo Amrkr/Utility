@@ -40,3 +40,6 @@ SUCCESS HTTPS POST CALL
  curl -X POST -i -H "Accept: application/json" -H "Content-Type: application/json" -H "Authorization: NLAuth nlauth_account=TSTDRV2067293, nlauth_email=EMAIL, nlauth_signature=PWD" -d "{\"csv\" : \"$csv\"}" "https://tstdrv2067293.restlets.api.netsuite.com/app/site/hosting/restlet.nl?script=2531&deploy=1"
  
  
+FILE TRANSFER AS PLAIN/TEXT
+========================================
+curl -X POST -i -H "Content-Type: text/plain" -H "Authorization: NLAuth nlauth_account=EMAIL, nlauth_signature=PWD" -d  @"/home/amar/Documents/Sample Files/Reimbursements.csv"  "https://tstdrv2067293.restlets.api.netsuite.com/app/site/hosting/restlet.nl?script=2531&deploy=1&csv=TmFtZSxBZ2UNCkFtYXIsMjUNCg=="
