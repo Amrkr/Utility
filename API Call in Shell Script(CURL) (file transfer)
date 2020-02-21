@@ -43,3 +43,10 @@ SUCCESS HTTPS POST CALL
 FILE TRANSFER AS PLAIN/TEXT
 ========================================
 curl -X POST -i -H "Content-Type: text/plain" -H "Authorization: NLAuth nlauth_account=EMAIL, nlauth_signature=PWD" -d  @"/home/amar/Documents/Sample Files/Reimbursements.csv"  "https://tstdrv2067293.restlets.api.netsuite.com/app/site/hosting/restlet.nl?script=2531&deploy=1&csv=TmFtZSxBZ2UNCkFtYXIsMjUNCg=="
+
+
+SAVE RESPONSE TO FILE
+======================================
+ curl -X GET -i -H "Accept: application/json" -H "Content-Type: application/json" -H "Authorization: NLAuth nlauth_account=TSTDRV2067293, nlauth_email=EMAIL, nlauth_signature=PWD" -o  C:\Users\amark\Downloads\restlet.json "https://tstdrv2067293.restlets.api.netsuite.com/app/site/hosting/restlet.nl?script=2668&deploy=1&page=1000"
+
+Downloaded response will be available in: C > cygwin (Installation Folder) > home > amark (User)
