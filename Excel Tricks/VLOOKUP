@@ -1,0 +1,1 @@
+=VLOOKUP(TRIM(L2),$I$1:$J$9,2,FALSE)
