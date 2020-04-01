@@ -1,0 +1,5 @@
+20190223 to 23-02-2019
+
+=DATE(LEFT(A2,4),MID(A2,5,2),RIGHT(A2,2))
+
+Right click on date column > format cell > custom > type mm/dd/yyyy to convert date to this format
